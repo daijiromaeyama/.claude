@@ -1,0 +1,33 @@
+{
+  "model": "opus",
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(gh pr diff:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh pr view:*)",
+      "Bash(grep:*)",
+      "Bash(less:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(rg:*)",
+      "WebFetch(domain:aws.amazon.com)",
+      "WebFetch(domain:cloud.google.com)",
+      "WebFetch(domain:developers.google.com)",
+      "WebFetch(domain:developer.zendesk.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:docs.aws.amazon.com)",
+      "WebFetch(domain:docs.stripe.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.twilio.com)"
+    ],
+    "deny": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(rm:*)",
+      "Bash(terragrunt apply:*)",
+      "Bash(terragrunt destroy:*)",
+      "Bash(*-exec rm*)"
+    ]
+  }
+}
