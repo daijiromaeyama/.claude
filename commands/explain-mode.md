@@ -1,6 +1,6 @@
 ---
 description: "Enable explain mode - Claude will explain changes and commands before executing"
-tool_allow_list: []
+allowed-tools: []
 ---
 
 # Explain Mode
@@ -10,6 +10,9 @@ This command enables explain mode for the current session. When you run `/explai
 ## What happens when you run this command:
 
 Tell the user: "Explain mode enabled. I will now explain all code changes and commands before executing them."
+
+**IMPORTANT**: This is NOT a one-time explanation request.
+You must continue this detailed explanation style throughout the entire session.
 
 ## For the rest of this session, you MUST:
 
