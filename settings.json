@@ -19,12 +19,15 @@
       "WebFetch(domain:docs.aws.amazon.com)",
       "WebFetch(domain:docs.stripe.com)",
       "WebFetch(domain:github.com)",
+      "WebFetch(domain:registry.terraform.io)",
       "WebFetch(domain:www.twilio.com)"
     ],
     "deny": [
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(rm:*)",
+      "Bash(terraform apply:*)",
+      "Bash(terraform destroy:*)",
       "Bash(terragrunt apply:*)",
       "Bash(terragrunt destroy:*)",
       "Bash(*-exec rm*)"
