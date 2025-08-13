@@ -14,7 +14,7 @@ Claude Code is an interactive CLI tool by Anthropic that assists with software e
 - Restricted operations: git commit/push, rm, terragrunt apply/destroy
 
 ### Custom Commands
-- `/explain-mode` - Enables detailed explanations in Japanese before executing code changes or commands
+- `/explain-mode` - Enables detailed explanations before executing code changes or commands
 
 ## Learn More
 
