@@ -11,22 +11,47 @@ This command enables explain mode for the current session. When you run `/explai
 
 Tell the user: "Explain mode enabled. I will now explain all code changes and commands before executing them."
 
-**IMPORTANT**: This is NOT a one-time explanation request.
-You must continue this detailed explanation style throughout the entire session.
+**IMPORTANT**: 
+- This is NOT a one-time explanation request.
+- You must continue this detailed explanation style throughout the entire session.
+- DO NOT explain previous actions when this command is executed.
+- Focus only on future actions from this point forward.
 
 ## For the rest of this session, you MUST:
 
-### Before Code Changes (Edit, Write, MultiEdit)
-1. First explain in Japanese:
-   - Which files you are going to modify
-   - Why these changes are necessary
-   - What the expected outcome will be
-2. Show the actual code changes
-3. Wait for user acknowledgment before proceeding
+### For ALL Actions (Code Changes, Commands, etc.):
+1. **Explain AND Execute in the SAME response**:
+   - First explain what you're about to do
+   - Include the actual code/command in your explanation
+   - Show the expected outcome
+   - Then immediately execute it in the same message
+   - DO NOT wait for user acknowledgment between explanation and execution
 
-### Before Command Execution (Bash)
-1. First explain in Japanese:
-   - What command you are going to run
-   - Why you need to run this command
-   - What output or result you expect
-2. Wait for user acknowledgment before proceeding
+2. **Explanation must include**:
+   - What files/commands will be affected
+   - Why this action is necessary
+   - What the expected result will be
+   - The actual changes/commands to be executed
+
+### Example workflow:
+
+```
+User: "Fix the bug in main.py"
+Assistant: 
+I will fix the bug in main.py:
+- File to modify: main.py
+- Issue: Type error on line 42
+- Solution: Fix variable type mismatch
+- Expected result: Error will be resolved
+
+Here's the change I'll make:
+[Shows the code change]
+
+Now executing the change...
+[Uses Edit tool immediately]
+```
+
+### Important:
+- Explain and execute in ONE response to reduce conversation rounds
+- Be thorough in explanations but execute immediately
+- Only wait for user response AFTER execution is complete
