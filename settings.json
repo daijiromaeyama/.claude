@@ -1,8 +1,8 @@
 {
-  "model": "opus",
   "permissions": {
     "allow": [
       "Bash(find:*)",
+      "Bash(gh issue view:*)",
       "Bash(gh pr diff:*)",
       "Bash(gh pr list:*)",
       "Bash(gh pr view:*)",
@@ -11,14 +11,24 @@
       "Bash(ls:*)",
       "Bash(mkdir:*)",
       "Bash(rg:*)",
+      "Bash(tree:*)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:awscli.amazonaws.com)",
       "WebFetch(domain:aws.amazon.com)",
       "WebFetch(domain:cloud.google.com)",
+      "WebFetch(domain:cookbook.openai.com)",
+      "WebFetch(domain:developers.cloudflare.com)",
       "WebFetch(domain:developers.google.com)",
       "WebFetch(domain:developer.zendesk.com)",
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:docs.aws.amazon.com)",
+      "WebFetch(domain:docs.cloudflare.com)",
       "WebFetch(domain:docs.stripe.com)",
       "WebFetch(domain:github.com)",
+      "WebFetch(domain:js.langchain.com)",
+      "WebFetch(domain:openai.com)",
+      "WebFetch(domain:platform.openai.com)",
+      "WebFetch(domain:python.langchain.com)",
       "WebFetch(domain:registry.terraform.io)",
       "WebFetch(domain:www.twilio.com)"
     ],
@@ -30,7 +40,7 @@
       "Bash(terraform destroy:*)",
       "Bash(terragrunt apply:*)",
       "Bash(terragrunt destroy:*)",
-      "Bash(*-exec rm*)"
+      "Bash(:*-exec rm:*)"
     ]
   }
 }
