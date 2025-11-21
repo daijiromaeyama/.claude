@@ -9,7 +9,6 @@ Claude Code is an interactive CLI tool by Anthropic that assists with software e
 ## Current Configuration
 
 ### settings.json
-- Model: `opus` (Claude Opus 4)
 - Custom permissions for allowed/denied commands
 - Restricted operations: git commit/push, rm, terragrunt apply/destroy
 
