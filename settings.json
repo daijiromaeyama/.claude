@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(find:*)",
+      "Bash(gcloud functions logs read:*)",
       "Bash(gh issue view:*)",
       "Bash(gh pr checks:*)",
       "Bash(gh pr diff:*)",
