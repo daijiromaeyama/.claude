@@ -28,6 +28,7 @@
       "WebFetch(domain:docs.aws.amazon.com)",
       "WebFetch(domain:docs.cloudflare.com)",
       "WebFetch(domain:docs.cloud.google.com)",
+      "WebFetch(domain:docs.langchain.com)",
       "WebFetch(domain:docs.stripe.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:js.langchain.com)",
