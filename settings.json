@@ -37,6 +37,7 @@
       "WebFetch(domain:platform.openai.com)",
       "WebFetch(domain:python.langchain.com)",
       "WebFetch(domain:registry.terraform.io)",
+      "WebFetch(domain:security.snyk.io)",
       "WebFetch(domain:www.twilio.com)",
       "WebFetch(domain:zod.dev)"
     ],
