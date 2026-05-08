@@ -44,6 +44,7 @@
     "deny": [
       "Bash(git commit:*)",
       "Bash(git push:*)",
+      "Bash(git rm:*)",
       "Bash(rm:*)",
       "Bash(terraform apply:*)",
       "Bash(terraform destroy:*)",
