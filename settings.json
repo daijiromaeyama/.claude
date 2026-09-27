@@ -51,7 +51,7 @@
       "Bash(terraform destroy:*)",
       "Bash(terragrunt apply:*)",
       "Bash(terragrunt destroy:*)",
-      "Bash(:*-exec rm:*)"
+      "Bash(* -exec rm *)"
     ]
   }
 }
